@@ -1,0 +1,62 @@
+.body_style{
+    font-family: 'Amiko';
+    background-color: #edf0f5;
+    width: 98.90%;
+}
+
+.button1{
+    border-radius: 30px;
+}
+
+.button2{
+    width: 40%;
+}
+
+.jumbotron{
+    width: 70%;
+    height: 90%;
+    margin-left: 15%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 
+                0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.show_login_button{
+    position: absolute;
+    z-index: 9999;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 105.65%;
+    width: 100%;
+    background-color: #dc3545;
+}
+
+.signup_option{
+    margin-top: 10%;
+}
+
+.show_signup_button{
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 105.65%;
+    width: 100%;
+    background-color: #008CBA;
+}
+
+.login_option{
+    margin-top: 10%;
+}
+
+.wrap{
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 20px;
+    color: white;
+}
