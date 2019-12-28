@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <title>TESTIFICATION</title>
+        <!-- CSS -->
+            <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+            <!-- Bootstrap core CSS -->
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <!-- Material Design Bootstrap -->
+            <link href="css/mdb.min.css" rel="stylesheet">
+            <!-- Google Fonts -->
+            <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
+            <!-- Custom Files -->
+            <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Scripts -->
+            <!-- JQuery -->
+            <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="js/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    </head>
+    
+    <body class="body_style">
+        
+        <header>
+
+            <!--Navbar -->
+            <nav class="mb-1 navbar navbar-expand-lg navbar-light winter-neva-gradient scrolling-navbar fixed-top">
+                <a class="navbar-brand" href="#">
+                    TESTIFICATION
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+                        aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">DASHBOARD
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li>
+                            <button type="button" class="btn btn-sm btn-primary button1">LOG OUT</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        
+        <br><br><br><br>
+        
+        <main>
+            <div class="container">
+
+                <center>
+                
+                    <h1>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                            <center>
+                                ENTER PREDICTOR TOOL DEFAULT.
+                            </center>
+                        </div>    
+                    </h1>
+                    
+                </center>
+
+                    <form class="text" style="color: #757575;" action="#!">                    
+                    <div class="form mb-0">
+                        
+                        <!-- Style -->
+                        <label for="customRange1">Style Value: <span id="demo1"></span></label>
+                        <input type="range" class="custom-range" min="0" max="10" value="0" id="customRange1">
+                        
+                        <script>
+                            var slider1 = document.getElementById("customRange1");
+                            var output1 = document.getElementById("demo1");
+                            output1.innerHTML = slider1.value;
+
+                            slider1.oninput = function() {
+                                output1.innerHTML = this.value;
+                            }
+                        </script>
+                        
+                        <br><br>
+                        <!-- Performance -->
+                        <label for="customRange2">Performance Value: <span id="demo2"></span></label>
+                        <input type="range" class="custom-range" min="0" max="10" value="0" id="customRange2">
+                        
+                        <script>
+                            var slider2 = document.getElementById("customRange2");
+                            var output2 = document.getElementById("demo2");
+                            output2.innerHTML = slider2.value;
+                            
+                            slider2.oninput = function(){
+                                output2.innerHTML = this.value;    
+                            }
+                            
+                        </script>
+                                 
+                        <br><br>    
+                        <!-- Comfort -->
+                        <label for="customRange3">Comfort Value: <span id="demo3"></span></label>
+                        <input type="range" class="custom-range" min="0" max="10" value="0" id="customRange3">
+                        
+                        <script>
+                            var slider3 = document.getElementById("customRange3");
+                            var output3 = document.getElementById("demo3");
+                            output3.innerHTML = slider3.value;
+                            
+                            slider3.oninput = function(){
+                                output3.innerHTML = this.value;    
+                            }
+                            
+                        </script>
+                        
+                        <br><br>
+                        <!-- Safety -->
+                        <label for="customRange4">Safety Value: <span id="demo4"></span></label>
+                        <input type="range" class="custom-range" min="0" max="10" value="0" id="customRange4">
+                        
+                        <script>
+                            var slider4 = document.getElementById("customRange4");
+                            var output4 = document.getElementById("demo4");
+                            output4.innerHTML = slider4.value;
+                            
+                            slider4.oninput = function(){
+                                output4.innerHTML = this.value;    
+                            }
+                            
+                        </script>
+                        
+                        
+                        <br><br>
+                        <!-- Features -->
+                        <label for="customRange5">Features Value: <span id="demo5"></span></label>
+                        <input type="range" class="custom-range" min="0" max="10" value="0" id="customRange5">
+                        
+                        
+                        <script>
+                            var slider5 = document.getElementById("customRange5");
+                            var output5 = document.getElementById("demo5");
+                            output5.innerHTML = slider5.value;
+                            
+                            slider5.oninput = function(){
+                                output5.innerHTML = this.value;    
+                            }
+                            
+                        </script>
+                        
+                        <br><br>
+                        <!-- Green -->
+                        <label for="customRange6">Green Value: <span id="demo6"></span></label>
+                        <input type="range" class="custom-range" min="0" max="10" value="0" id="customRange6">
+                        
+                        
+                        <script>
+                            var slider6 = document.getElementById("customRange6");
+                            var output6 = document.getElementById("demo6");
+                            output6.innerHTML = slider6.value;
+                            
+                            slider6.oninput = function(){
+                                output6.innerHTML = this.value;    
+                            }
+                            
+                        </script>
+                        <br><br>
+                    </div>
+                    <button class="btn btn-primary btn-rounded btn-block button1" type="submit">ADD DEFAULT</button>
+                </form> 
+            </div>
+        </main>
+    </body>
+</html>

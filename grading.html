@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Grading</title>
+        <script>
+            function calc_grade()
+            {
+                var s = document.getElementById("select");
+                var i;
+                for(i=1;i<=6;i++)
+                {
+                    //max and min are retrieved from database
+                    var max = 30;
+                    var min = 0;
+                    var pg = document.getElementById("pp".concat(i.toString()));
+                    var p = document.getElementById("p".concat(i.toString()));
+                    var pp = parseInt(p.value)
+                    var range = max-min; 
+                    var interval = Math.round(range/10);
+                    var grade=1;
+                    while(pp>interval*grade)
+                        grade=grade+1;
+                    if(pg.innerHTML=="Airbag Release time(ms)")
+                        grade=10-grade;
+                    pg.innerHTML="Grade for parameter "+i+":"+grade;
+                    p.value="";
+                    p.disabled=true;
+                    s.disabled=true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>Select Vehicle type</p>
+        <select id="select">
+            <option selected="selected">Select</option>
+            <option>SUV</option>
+            <option>Sedan</option>
+            <option>Hatchback</option>
+        </select>
+        <p id="pp1">Engine speed(rpm)</p>
+        <input id="p1" type="text" placeholder="Value of Engine speed">
+        <p id="pp2">Engine oil pressure(bar)</p>
+        <input id="p2" type="text" placeholder="Value of Engine oil pressure">
+        <p id="pp3">Max speed(kmph)</p>
+        <input id="p3" type="text" placeholder="Value of Max Speed">
+        <p id="pp4">Neck axial tension(kN)</p>
+        <input id="p4" type="text" placeholder="Value of Neck Axial Tension">
+        <p id="pp5">Foot acceleration</p>
+        <input id="p5" type="text" placeholder="Value of Foot Acceleration">
+        <p id="pp6">Airbag Release time(ms)</p>
+        <input id="p6" type="text" placeholder="Value of Airbag Release Time">
+        <button id="sub" type="submit" onclick="calc_grade()">Calculate Grade</button>
+        <button type="reset" onclick="location.reload()">Reset</button>
+    </body>
+</html>
